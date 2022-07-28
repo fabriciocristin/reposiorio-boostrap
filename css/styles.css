@@ -1,7 +1,235 @@
-h1 {
+body{
+    width: 100%;
+    background-image: url(../img/fondo.jpg); width: 100%;
+    color: white;
+    font-family: 'Bahnschrift', sans-serif;
+}
+.grid {
+    display: grid;
+    grid-template-areas:
+    "titulo"
+    "navegacion"
+    "lista"
+    "video"
+    "footer";
+}
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: red;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    margin:15px;
+} 
+
+
+.lista {
+    grid-area: lista;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
 }
 
-p {
-    background-color: blueviolet;
+.list__title{
+    list-style: none;
+}
+.list__options{
+    margin: 12px;
+    list-style: circle;
+}
+
+.list__item{
+    font-weight: normal;
+}
+
+@media (min-width:768px) {
+    .grid{
+        grid-area:lista ;
+    }
+    .lista{
+        display: flex;
+        justify-content: right;
+    }
+}
+
+.container{
+    grid-area: video;
+    display: flex;
+}
+
+.container__video{
+    max-width: 100%;
+}
+
+.container__description {
+    display: flex;
+    width: 400px;
+    height: auto;
+    margin: 18px;
+    padding: 18px;
+    border-radius: 12px;
+    background-color:  #000080;
+    float: right ;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    min-height: min-content;
+    justify-content: center;
+}
+
+.negrita {
+    font-weight: bold;
+}
+/****GRID FIRST MOBILE CONTACTO****/
+#contacto{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "cabecera"
+    "formulario"
+    "footer";
+}
+
+#cabecera{
+    grid-area: cabecera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 25px;
+    }
+
+#formulario{
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.formulario__inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items:center;
+}
+
+/*** FIRST DEKSTOP***/
+.card{
+    width: 3fr;
+    height: auto;
+    margin: 24px ;
+    background-color: rgb(20, 20, 20);
+    gap: 70px;
+    border:solid 5px rgb(182, 46, 46);
+}
+
+.card__imagen {
+    width: 65%;
+    margin: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__parrafo {
+    color: rgb(182, 46, 46);
+    font-size: 30px;
+    font-weight:bold;
+    text-align: center;
+}
+
+.card__parrafo--descripcion {
+    color: white;
+    font-size: medium;
+    padding: 10px;
+    justify-content: flex-start;
+
+}
+
+.card__container{
+        display: flex;
+        flex-direction: row;
+}
+
+@media (min-width:768) {
+    .card__container{
+        display: flex;
+        flex-direction:column;
+    }
+}
+
+.block__title {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+    font-size: 40px;
+    font-family: 'Titan One', cursive;
+}    
+.block__description {
+    font-size: 20px;
+    color:black;
+    width: 480px;
+    height: auto;
+    margin: 15px auto;
+    padding: 18px;
+    border-radius: 12px;
+    background-color: rgba(42, 42, 238, 0.418);
+}   
+
+@media (max-width: 767px) {
+    .block {
+        display:block;
+        height: auto;
+        width: auto;}
+        .block__description {
+            display: flex;
+            width: auto;
+            height: auto;}
+    }
+
+.roto{
+    grid-area: footer;
+    display: flex;
+    margin:15% 0 10px 0 ;
+    justify-content: center;
+}
+.table{
+    margin: 30px;
+    width: 95%;
+    height: auto;
+}
+table th {
+    color:red;
+
+}
+table td {
+    color:white;
+}
+
+.fondo-gradiente{
+    background: linear-gradient(to top, blue, black);
+}
+
+.bg-light{
+    background-color: #000080 !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.logo {
+    height: 35px;
+    width: 35px;
 }
