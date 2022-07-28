@@ -34,10 +34,20 @@ body{
 
 .list__title{
     list-style: none;
+
 }
 .list__options{
     margin: 12px;
     list-style: circle;
+    margin-left: 100px;
+}
+
+.list__section{
+    margin-top:20px;
+    display: flex;
+    gap: 30%;
+    margin-left: 30px;
+    justify-content: center;
 }
 
 .list__item{
@@ -77,7 +87,7 @@ body{
 .footer{
     grid-area: footer;
     display: flex;
-    min-height: min-content;
+    margin-bottom: 20px;
     justify-content: center;
 }
 
@@ -121,58 +131,8 @@ body{
     align-items:center;
 }
 
-/*** FIRST DEKSTOP***/
-.card{
-    width: 3fr;
-    height: auto;
-    margin: 24px ;
-    background-color: rgb(20, 20, 20);
-    gap: 70px;
-    border:solid 5px rgb(182, 46, 46);
-}
 
-.card__imagen {
-    width: 65%;
-    margin: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card__parrafo {
-    color: rgb(182, 46, 46);
-    font-size: 30px;
-    font-weight:bold;
-    text-align: center;
-}
-
-.card__parrafo--descripcion {
-    color: white;
-    font-size: medium;
-    padding: 10px;
-    justify-content: flex-start;
-
-}
-
-.card__container{
-        display: flex;
-        flex-direction: row;
-}
-
-@media (min-width:768) {
-    .card__container{
-        display: flex;
-        flex-direction:column;
-    }
-}
-
-.block__title {
-    text-align: center;
-    font-size: 30px;
-    color: red;
-    font-size: 40px;
-    font-family: 'Titan One', cursive;
-}    
+    
 .block__description {
     font-size: 20px;
     color:black;
@@ -195,12 +155,6 @@ body{
             height: auto;}
     }
 
-.roto{
-    grid-area: footer;
-    display: flex;
-    margin:15% 0 10px 0 ;
-    justify-content: center;
-}
 .table{
     margin: 30px;
     width: 95%;
@@ -232,4 +186,80 @@ table td {
 .logo {
     height: 35px;
     width: 35px;
+}
+
+.form {
+    margin:20px 0px 20px 0px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer1{
+    display: flex;
+    justify-content: center;
+    margin-top: 58px;
+}
+
+.cardss{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+
+    background-color: rgb(20, 20, 20);
+    border:solid 5px red;
+    margin:20px;
+}
+
+
+
+.card-img-top{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
+.col a{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    
+}
+
+.card-title{
+    font-family: 'Oswald', sans-serif;
+    color: red;
+}
+
+.footer2{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.roto{
+    display: flex;
+    justify-content: center;
+    margin-top: 131px;
+}
+
+.margen{
+    margin-top: 60px;
+}
+
+#navbarNavDropdown{
+    margin-right: 20px;
+}
+
+.roto2{
+    display: flex;
+    justify-content: center;
+    margin-top: 247px;
 }
